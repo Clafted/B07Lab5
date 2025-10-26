@@ -1,4 +1,6 @@
-package lab4;
+package lab5;
+
+import lab4.Point;
 
 public class Rectangle{
     private Point topLeft;

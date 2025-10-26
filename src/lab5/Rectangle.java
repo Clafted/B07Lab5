@@ -7,11 +7,12 @@ public class Rectangle{
     private Point topRight;
     private Point bottomLeft;
     private Point bottomRight;
+    
     public Rectangle(Point topLeft, Point topRight, Point bottomLeft, Point bottomRight){
-        topLeft = topLeft;
-        topRight = topRight;
-        bottomLeft = bottomLeft;
-        bottomRight = bottomRight;
+        this.topLeft = topLeft;
+        this.topRight = topRight;
+        this.bottomLeft = bottomLeft;
+        this.bottomRight = bottomRight;
 
         if (topLeft.y != topRight.y || bottomLeft.y != bottomRight.y
                 || topLeft.x != bottomLeft.x || topRight.x != bottomRight.x) {

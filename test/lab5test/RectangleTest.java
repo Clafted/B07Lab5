@@ -10,7 +10,7 @@ import lab5.Rectangle;
 
 	@Test
 	public void widthTest() {
-		Point p1 = new Point(1, 0);
+		Point p1 = new Point(1, 0); 
 		Point p2 = new Point(1, 1);
 		Point p3 = new Point(2, 0);
 		Point p4 = new Point(2, 1);

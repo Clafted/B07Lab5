@@ -16,16 +16,20 @@ public class Rectangle{
             throw new IllegalArgumentException("Corners are not aligned");
         }
     }
-    private double width() {
+    public double width() {
         return Math.abs(topRight.x - topLeft.x);
     }
 
-    private double height() {
+    public double height() {
         return Math.abs(topLeft.y - bottomLeft.y);
     }
 
     public double perimeter() {
         return 2 * (width() + height());
+    }
+
+    public double area(){
+        return (width() * height());
     }
 
     public boolean isSquare() {

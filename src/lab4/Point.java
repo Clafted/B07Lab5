@@ -1,8 +1,8 @@
 package lab4;
 
 public class Point {
-	public double x;
-	public double y;
+	double x;
+	double y;
 	
 	public Point(double x, double y) {
 		this.x = x;

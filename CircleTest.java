@@ -9,10 +9,13 @@ class CircleTest {
 	double y_test = 2.0;
 	double x2_test = 3.0;
 	double y2_test = 4.0;
+	double x3_test = 13.0;
+	double y3_test = 14.0;
 	double r_test = 5.0;
 	
 	Point p = new Point(x_test, y_test);	
 	Point p2 = new Point(x2_test, y2_test);
+	Point p3 = new Point(x3_test, y3_test);
 	Circle c = new Circle(p, r_test);
 	
 	@Test
@@ -38,8 +41,21 @@ class CircleTest {
 	}
 
 	@Test
-	void test_isOutside_false() {
-		assertFalse(c.isOutside(p));
+	void test_isOutside_less_false() {
+		assertFalse(c.isOutside(p2));
 		System.out.println(p.distance(p2));
+	}
+	
+	@Test
+	void test_isOutside_greater_true() {
+		assertTrue(c.isOutside(p3));
+		System.out.println(p.distance(p3));
+	}
+	
+	@Test
+	void test_isOutside_equal_true() {
+		c.radius = 0.0;
+		assertTrue(c.isOutside(p));
+		System.out.println(p.distance(p));
 	}
 }
